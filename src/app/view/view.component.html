@@ -1,0 +1,13 @@
+<div class="view_container">
+  <ul class="list_style">
+    <li *ngFor="let hotel of hotelDetails">
+      Hotel Name : {{hotel.name}}<br/>
+      Address : {{hotel.address}}<br/>
+      Location : {{hotel.location}}<br/>
+      Zip : {{hotel.zip}}<br/>
+      Day Rate : {{hotel.dayRate}}<br/>
+      Night Rate : {{hotel.nightRate}}
+    </li>
+  </ul>
+  <button type="button" class="btn btn-success" [routerLink]="['/book/id/',id]">Book Hotel</button>
+</div>

@@ -1,0 +1,20 @@
+<div class="result_container">
+  <h5 style="padding-left: 10px;">Hotel Results</h5>
+  <button type="button" class="btn btn-success" [routerLink]="['/search']">Change Search</button>
+  <table class="table-striped table-bordered table-condensed" style="margin-top: 10px;">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City - State</th>
+      <th>Zip</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let hotel of hotelList">
+      <td>{{hotel.name}}</td>
+      <td>{{hotel.address}}</td>
+      <td>{{hotel.location}}</td>
+      <td>{{hotel.zip}}</td>
+      <td><button type="button" class="btn btn-success" [routerLink]="['/view/id/', hotel._id]">View Hotel</button></td>
+    </tr>    
+  </table>
+</div>

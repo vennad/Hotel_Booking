@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+/****************************
+ * Variables
+ ***************************/
+/****************************
+ * Font
+ ***************************/
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/ProximaNova-Regular.eot");
+  src: url('../assets/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url("../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype"), url('../assets/fonts/ProximaNova-Regular.svg') format('svg');
+  text-rendering: optimizeLegibility;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+  @font-face {
+    font-family: 'ProximaNova';
+    src: url('../assets/fonts/ProximaNova-Regular.svg') format('svg');
+  }
+}
+body {
+  font-family: 'ProximaNova', sans-serif;
+  background-color: #f0f0f0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: bold;
+}
+p,
+a,
+li,
+span,
+div,
+input,
+table,
+select {
+  font-family: 'ProximaNova', sans-serif;
+}
+.clear {
+  clear: both;
+}
+
+/****************************
+ * Footer
+ ***************************/
+footer {
+  font-family: 'ProximaNova', sans-serif;
+  background-image: url(../assets/images/main-footer.jpg);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #4D6E08;
+  height: 30px;
+  font-weight: bold;
+}
+
+
+/****************************
+ * Main Content
+ ***************************/
+.main-content {
+  background-image: url(../assets/images/main-content.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+.main-content .main-content-intro {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-content-top {
+  color: white;
+  padding: 10px;
+  height: 35px;
+  background-color: #4D6E08;
+  opacity: 0.7;
+  text-align: center;
+}
+.main-content-bottom {
+  color: white;
+  padding: 10px;
+  height: 30px;
+  background-color: #4D6E08;
+  opacity: 0.7;
+  text-align: center;
+
+}
+
+.browsehappy{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}body{padding:0}.header,.marketing,.footer{padding-left:15px;padding-right:15px}.header{border-bottom:1px solid #e5e5e5;margin-bottom:10px}.header h3{margin-top:0;margin-bottom:0;line-height:40px;padding-bottom:19px}.footer{padding-top:19px;color:#777;border-top:1px solid #e5e5e5}.container-narrow>hr{margin:30px 0}.jumbotron{text-align:center;border-bottom:1px solid #e5e5e5}.jumbotron .btn{font-size:21px;padding:14px 24px}.marketing{margin:40px 0}.marketing p+h4{margin-top:28px}@media screen and (min-width:768px){.container{max-width:730px}.header,.marketing,.footer{padding-left:0;padding-right:0}.header{margin-bottom:30px}.jumbotron{border-bottom:0}}
+
+
+/* Mobile adjustments */
+@media (max-width: 510px) {
+  .main-content {
+    background-image: url(../assets/images/main-content-mobile.jpg);
+    background-size: auto;
+  }
+}
+@media (max-width: 700px) {
+  .main-content {
+    background-image: url(../assets/images/main-content-mobile.jpg);
+  }
+  .main-content .main-content-intro {
+    padding-top: 20px;
+  }
+
+}
+/* Tablet adjustments */
+@media (max-width: 1100px) {
+  .main-content {
+    height: 400;
+  }
+  .main-content .main-content-text {
+    padding-top: 60px;
+  }
+  .main-content .main-content-bottom {
+    margin-top: 10px;
+  }
+}
+/****************************
+ * Main Features
+ ***************************/
+.main-features {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../assets/images/main-features.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+  min-height: 425px;
+  background-color: #fff;
+}
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .main-features {
+    background-image: url(../assets/images/main-features-mobile.jpg);
+    padding-bottom: 35px;
+    background-color: #fff;
+  }
+}
+
+/* Search */
+.form-inline {
+  border: 1px solid #a1a1a1;
+  padding: 50px 40px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.mainimage{
+  width: 100%;
+  height: 100%;
+}
+
+

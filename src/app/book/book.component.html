@@ -1,0 +1,52 @@
+<div class="book_container">
+  <h5 style="padding-left: 10px;">Book Hotel</h5>
+  <div *ngIf="result!=''"  class="alert alert-success">{{result.result}}</div>
+  <div class="curved_border">
+    <form  [formGroup]="bookingForm" (ngSubmit)="bookHotel()" class="form-inline">
+      <div class="form-group">
+        <label for="name" style="padding-right: 20px;">User Name : </label>
+        <input type="text" name="name" placeholder="name" formControlName="name" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="address" style="padding-left:20px;padding-right: 20px;">User Address: </label>
+        <input type="text" name="address" placeholder="address"  formControlName="address" class="form-control" id="address">
+      </div>
+      <br/><br/>
+      <div class="form-group">
+        <label for="location" style="padding-right: 20px;">User Location  : </label>
+        <input type="text" name="location" placeholder="location" formControlName="location" class="form-control" id="location">
+      </div>
+      <div class="form-group">
+        <label for="zip" style="padding-left:20px;padding-right: 20px;">User Zip : </label>
+        <input type="text" name="zip" placeholder="zip" formControlName="zip" class="form-control" id="zip">
+      </div>
+      <br/><br/>
+      <div class="form-group">
+        <label for="htname" style="padding-right: 20px;">Hotel Name : </label>
+        <input type="text" placeholder="{{hname}}" formControlName="htname" class="form-control" id="htname">
+      </div>
+      <div class="form-group">
+        <label for="htaddress" style="padding-left:20px;padding-right: 20px;">Hotel Address : </label>
+        <input type="text" placeholder="{{haddress}}" formControlName="htaddress" class="form-control" id="htaddress">
+      </div>
+      <br/><br/>
+      <div class="form-group">
+        <label for="htlocation" style="padding-right: 20px;">Hotel Location : </label>
+        <input type="text" placeholder="{{hlocation}}" formControlName="htlocation" class="form-control" id="htlocation">
+      </div>
+      <div class="form-group">
+        <label for="htzip" style="padding-left:20px;padding-right: 20px;">Hotel Zip : </label>
+        <input type="text" placeholder="{{hzip}}" formControlName="htzip" class="form-control" id="htzip">
+      </div>
+      <div style="width: 100%;clear: both;">
+      <button type="submit" [disabled]="bookingForm.invalid" class="btn btn-success">Save</button>
+      <button type="button" class="btn btn-success" [routerLink]="['/']">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <br/><br/>
+    <div class="alert alert-danger" *ngIf="bookingForm.controls.name.touched && bookingForm.controls.name.errors">User Name is Mandatory</div>
+    <div class="alert alert-danger" *ngIf="bookingForm.controls.address.touched && bookingForm.controls.address.errors">Address is Mandatory</div>
+    <div class="alert alert-danger" *ngIf="bookingForm.controls.location.touched && bookingForm.controls.location.errors">Location is Mandatory</div>
+    <div class="alert alert-danger" *ngIf="bookingForm.controls.zip.touched && bookingForm.controls.zip.errors">Zip Code is Mandatory</div>
+</div>

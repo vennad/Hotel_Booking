@@ -1,0 +1,7 @@
+.view_container {
+  margin: 10px;
+}
+.list_style li {
+  list-style-type:none;
+  margin-left:-40px;
+}
